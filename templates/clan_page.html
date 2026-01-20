@@ -1,4 +1,14 @@
-{% extends "base.html" %} {% load static %} {% block content%}
+{% extends "base.html" %} {% load static %}
+<div class="container">
+  {% block content%}
 
-<h1>New Age</h1>
-{% endblock%}
+  <h1>New Age</h1>
+  <h1>New Age</h1>
+  <h1>New Age</h1>
+  <h1>New Age</h1>
+  <h1>New Age</h1>
+  <h1>New Age</h1>
+  {% for clan1 in clan_list %}
+  <p>{{clan1.name}}</p>
+  {% endfor %}{% endblock%}
+</div>

@@ -7,3 +7,5 @@ class Clans(models.Model):
     description = models.TextField(max_length=255)
     team_size = models.IntegerField()
     
+    def __str__(self):
+        return self.name
