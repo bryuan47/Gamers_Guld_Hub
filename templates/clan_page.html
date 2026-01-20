@@ -1,14 +1,6 @@
 {% extends "base.html" %} {% load static %}
 <div class="container">
-  {% block content%}
-
-  <h1>New Age</h1>
-  <h1>New Age</h1>
-  <h1>New Age</h1>
-  <h1>New Age</h1>
-  <h1>New Age</h1>
-  <h1>New Age</h1>
-  {% for clan1 in clan_list %}
-  <p>{{clan1.name}}</p>
+  {% block content%} {% for clan1 in clan_list %}
+  <p class="form1">{{clan1.name}}</p>
   {% endfor %}{% endblock%}
 </div>
