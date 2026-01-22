@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login 
 from .forms import LoginForm
+from django.contrib.auth.forms import UserCreationForm
+
 
 def user_login(request):
     if request.method  == 'POST':
@@ -24,3 +26,4 @@ def user_login(request):
     else: 
         form = LoginForm()
         return render(request, 'login.html', {'form':form})
+    
